@@ -1,17 +1,13 @@
-/tracking/verbose 0
+/tracking/verbose 1
 # 1D accelerator beam
 #
 /gps/particle proton
 /gps/pos/type Beam
-#
-# the incident surface is in the x-y plane
-/gps/pos/rot1 1 0 0
-/gps/pos/rot2 0 1 0
-#
-# the beam spot is centered at the origin and is
-# of 1d gaussian shape with a 3mm central plateau
+# beam direction
+/gps/direction 0 0 1
+# circular shape and 0 size
 /gps/pos/shape Circle
-/gps/pos/centre 0. 0. -1.5 m
+/gps/pos/centre 0. 0. -1. m
 /gps/pos/radius 0. mm
 /gps/pos/sigma_r 0. mm
 #
